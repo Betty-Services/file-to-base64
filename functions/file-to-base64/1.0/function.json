@@ -1,0 +1,41 @@
+{
+  "description": "This function converts the contents of a file/image URL to a Base64 string. ",
+  "label": "File to Base64",
+  "category": "Misc",
+  "icon": {
+    "name": "ActionsIcon",
+    "color": "Orange"
+  },
+  "options": [
+    {
+      "name": "fileURL",
+      "label": "URL",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": []
+      }
+    },
+    {
+      "name": "includeMimeType",
+      "label": "Include mime-type in output",
+      "meta": {
+        "type": "Boolean",
+        "default": true
+      }
+    },
+    {
+      "name": "result",
+      "label": "Result",
+      "meta": {
+        "type": "Output",
+        "validations": {
+          "required": true
+        },
+        "output": {
+          "type": "Text"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
